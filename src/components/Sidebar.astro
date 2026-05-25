@@ -1,0 +1,126 @@
+---
+const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
+
+const projects = [
+  {
+    href: '/projects/abacenters/',
+    label: 'ABA Centers',
+    icon: '/imgs/aba.webp',
+    tooltipTitle: 'ABA Centers',
+    tooltipDescription: 'Headless WordPress and Next.js redesign proposal for a therapy services website.',
+    tooltipImage: '/imgs/Abacenters.svg',
+  },
+  {
+    href: '/projects/facturazaz/',
+    label: 'Facturazaz',
+    icon: '/imgs/fz.svg',
+    tooltipTitle: 'Facturazaz',
+    tooltipDescription: 'SaaS invoicing platform for small and medium businesses.',
+    tooltipImage: '/imgs/Facturazaz.svg',
+  },
+  {
+    href: '/projects/studiobooking/',
+    label: 'StudioBooking',
+    icon: '/imgs/favicon.png',
+    tooltipTitle: 'StudioBooking',
+    tooltipDescription: 'Appointment booking SaaS for independent professionals and studios.',
+    tooltipImage: '/imgs/StudioBooking.png',
+  },
+  {
+    href: '/projects/lavazaz/',
+    label: 'Lavazaz',
+    icon: '/imgs/lava.png',
+    tooltipTitle: 'Lavazaz',
+    tooltipDescription: 'Full website redesign for a laundry service brand, built in WordPress with ACF.',
+    tooltipImage: '/imgs/Lavazaz.svg',
+  },
+  {
+    href: '/projects/sproutloud/',
+    label: 'SproutLoud',
+    icon: '/imgs/rm.png',
+    tooltipTitle: 'SproutLoud',
+    tooltipDescription: 'Corporate website rebuilt from scratch with WordPress, ACF, Pardot, SEO, WCAG 2.0, and JazzHR API integrations.',
+    tooltipImage: '/imgs/SproutLoud.svg',
+  },
+  {
+    href: '/projects/globalink/',
+    label: 'Globalink',
+    icon: '/imgs/gl.png',
+    tooltipTitle: 'Globalink',
+    tooltipDescription: 'Brand identity and WordPress website created from scratch.',
+    tooltipImage: '/imgs/Glink.svg',
+  },
+  {
+    href: '/projects/j3importaciones/',
+    label: 'J3 Importaciones',
+    icon: '/imgs/j3.png',
+    tooltipTitle: 'J3 Importaciones',
+    tooltipDescription: 'Brand identity and Elementor website created from scratch.',
+    tooltipImage: '/imgs/J3Impor.svg',
+  },
+  {
+    href: '/projects/lawyers/',
+    label: 'Lawyer Template',
+    icon: '/imgs/favicon-lawyer.png',
+    tooltipTitle: 'Lawyers Template',
+    tooltipDescription: 'Reusable HTML and CSS template for lawyers and legal firms.',
+    tooltipImage: '/imgs/Lawyers.svg',
+  },
+];
+---
+
+<aside class="sidebar" id="sidebar" data-collapsed="false">
+  <div class="sidebar-content">
+    <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle sidebar">
+      <span class="sidebar-toggle-icon sidebar-toggle-expand" aria-label="Expand sidebar">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15.5298 17.385L15.5298 23.021C15.5298 23.2822 15.6447 23.4614 15.8745 23.5587C16.1043 23.6561 16.3126 23.6114 16.4992 23.4247L18.9193 21.0047C19.1473 20.7752 19.2613 20.5077 19.2613 20.202C19.2613 19.8962 19.1473 19.6292 18.9193 19.4012L16.4993 16.9812C16.3126 16.7946 16.1043 16.7499 15.8745 16.8472C15.6447 16.9446 15.5298 17.1238 15.5298 17.385ZM27.1313 10.9997C27.7609 10.9997 28.2975 11.2215 28.741 11.665C29.1845 12.1085 29.4063 12.6451 29.4063 13.2747L29.4063 27.1312C29.4063 27.7609 29.1845 28.2975 28.741 28.741C28.2975 29.1845 27.7609 29.4062 27.1313 29.4062L13.2747 29.4062C12.6451 29.4062 12.1085 29.1845 11.665 28.741C11.2215 28.2975 10.9998 27.7609 10.9998 27.1312L10.9998 13.2747C10.9998 12.6451 11.2215 12.1085 11.665 11.665C12.1085 11.2215 12.6451 10.9997 13.2748 10.9997L27.1313 10.9997ZM24.2508 13.2747L24.2508 27.1312L27.1313 27.1312L27.1313 13.2747L24.2508 13.2747ZM21.9758 13.2747L13.2748 13.2747L13.2747 27.1312L21.9758 27.1312L21.9758 13.2747Z" fill="currentColor" opacity="0.7"></path>
+        </svg>
+      </span>
+      <span class="sidebar-toggle-icon sidebar-toggle-collapse" aria-label="Collapse sidebar">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24.8765 23.0213V17.3853C24.8765 17.1241 24.7616 16.9448 24.5318 16.8475C24.3019 16.7502 24.0937 16.7948 23.907 16.9815L21.487 19.4015C21.259 19.631 21.145 19.8986 21.145 20.2043C21.145 20.5101 21.259 20.777 21.487 21.005L23.907 23.425C24.0937 23.6117 24.3019 23.6563 24.5318 23.559C24.7616 23.4617 24.8765 23.2824 24.8765 23.0213ZM13.275 29.4065C12.6453 29.4065 12.1087 29.1848 11.6652 28.7413C11.2217 28.2978 11 27.7612 11 27.1315V13.275C11 12.6453 11.2217 12.1087 11.6652 11.6652C12.1087 11.2217 12.6453 11 13.275 11H27.1315C27.7612 11 28.2978 11.2217 28.7413 11.6652C29.1848 12.1087 29.4065 12.6453 29.4065 13.275V27.1315C29.4065 27.7612 29.1848 28.2978 28.7413 28.7413C28.2978 29.1848 27.7612 29.4065 27.1315 29.4065H13.275ZM16.1555 27.1315V13.275H13.275V27.1315H16.1555ZM18.4305 27.1315H27.1315V13.275H18.4305V27.1315Z" fill="currentColor" opacity="0.7"></path>
+        </svg>
+      </span>
+    </button>
+
+    <nav class="sidebar-nav">
+      <a href="/" class:list={['sidebar-nav-item', 'sidebar-brand-item', { 'sidebar-nav-item--active': pathname === '/' }]}>
+        <span class="sidebar-brand-icon"><img src="/imgs/avatar.png" alt="Carlos Menco Guardo avatar" /></span>
+        <span class="sidebar-nav-label">Carlos Menco Guardo</span>
+      </a>
+      <a href="/about/" class:list={['sidebar-nav-item', { 'sidebar-nav-item--active': pathname === '/about/' }]}>
+        <span class="sidebar-nav-icon sidebar-nav-icon-img">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.65 30.961C12.9213 30.961 12.2975 30.7015 11.7785 30.1825C11.2595 29.6635 11 29.0397 11 28.311V14.65C11 13.9213 11.2595 13.2975 11.7785 12.7785C12.2975 12.2595 12.9213 12 13.65 12H17.3838C17.6664 11.3812 18.0854 10.8932 18.6408 10.536C19.1963 10.1787 19.8095 10 20.4805 10C21.1515 10 21.7648 10.1787 22.3203 10.536C22.8756 10.8932 23.2946 11.3812 23.5773 12H27.311C28.0397 12 28.6635 12.2595 29.1825 12.7785C29.7015 13.2975 29.961 13.9213 29.961 14.65V28.311C29.961 29.0397 29.7015 29.6635 29.1825 30.1825C28.6635 30.7015 28.0397 30.961 27.311 30.961H13.65ZM13.65 28.311H27.311V14.65H13.65V28.311ZM16.65 26.311H21.438C21.7213 26.311 21.9588 26.2152 22.1505 26.0235C22.3422 25.8318 22.438 25.5943 22.438 25.311C22.438 25.0277 22.3422 24.7902 22.1505 24.5985C21.9588 24.4068 21.7213 24.311 21.438 24.311H16.65C16.3667 24.311 16.1292 24.4068 15.9375 24.5985C15.7458 24.7902 15.65 25.0277 15.65 25.311C15.65 25.5943 15.7458 25.8318 15.9375 26.0235C16.1292 26.2152 16.3667 26.311 16.65 26.311ZM16.65 22.4805H24.311C24.5943 22.4805 24.8318 22.3847 25.0235 22.193C25.2152 22.0013 25.311 21.7638 25.311 21.4805C25.311 21.1972 25.2152 20.9597 25.0235 20.768C24.8318 20.5763 24.5943 20.4805 24.311 20.4805H16.65C16.3667 20.4805 16.1292 20.5763 15.9375 20.768C15.7458 20.9597 15.65 21.1972 15.65 21.4805C15.65 21.7638 15.7458 22.0013 15.9375 22.193C16.1292 22.3847 16.3667 22.4805 16.65 22.4805ZM16.65 18.65H24.311C24.5943 18.65 24.8318 18.5542 25.0235 18.3625C25.2152 18.1708 25.311 17.9333 25.311 17.65C25.311 17.3667 25.2152 17.1292 25.0235 16.9375C24.8318 16.7458 24.5943 16.65 24.311 16.65H16.65C16.3667 16.65 16.1292 16.7458 15.9375 16.9375C15.7458 17.1292 15.65 17.3667 15.65 17.65C15.65 17.9333 15.7458 18.1708 15.9375 18.3625C16.1292 18.5542 16.3667 18.65 16.65 18.65ZM21.0957 13.5957C21.2609 13.4306 21.3435 13.2255 21.3435 12.9805C21.3435 12.7355 21.2609 12.5304 21.0957 12.3652C20.9306 12.2001 20.7255 12.1175 20.4805 12.1175C20.2355 12.1175 20.0304 12.2001 19.8653 12.3652C19.7001 12.5304 19.6175 12.7355 19.6175 12.9805C19.6175 13.2255 19.7001 13.4306 19.8653 13.5957C20.0304 13.7609 20.2355 13.8435 20.4805 13.8435C20.7255 13.8435 20.9306 13.7609 21.0957 13.5957Z" fill="currentColor" opacity="0.7"></path>
+          </svg>
+        </span>
+        <span class="sidebar-nav-label-group">
+          <span class="sidebar-nav-label">Resume</span>
+        </span>
+      </a>
+    </nav>
+
+    <div class="sidebar-projects">
+      <h6 class="sidebar-projects-title">Projects</h6>
+      <ul class="sidebar-projects-list">
+        {projects.map((project) => (
+          <li>
+            <a
+              href={project.href}
+              class:list={['sidebar-project-item', { 'sidebar-project-item--active': pathname === project.href }]}
+              data-tooltip-image={project.tooltipImage}
+              data-tooltip-title={project.tooltipTitle}
+              data-tooltip-description={project.tooltipDescription}
+            >
+              <span class="sidebar-project-icon">
+                <img src={project.icon} alt="" class="sidebar-project-icon-img" width="20" height="20" />
+              </span>
+              <span class="sidebar-project-label">{project.label}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</aside>

@@ -1,0 +1,53 @@
+---
+import Sidebar from '../components/Sidebar.astro';
+
+interface Props {
+  title: string;
+  mainClass?: string;
+  activePage?: string;
+  pageScripts?: string[];
+}
+
+const {
+  title,
+  mainClass = 'main-content',
+  pageScripts = [],
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <link rel="icon" type="image/png" href="/imgs/favicon.png" />
+    <script is:inline>
+      try {
+        var s = localStorage.getItem('sidebar-collapsed');
+        if (s === 'true' || s === null) {
+          document.documentElement.classList.add('sidebar-preload-collapsed');
+        }
+      } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="layout-with-sidebar">
+    <Sidebar />
+    <main class={mainClass}>
+      <slot />
+    </main>
+    <div id="project-tooltip" class="project-tooltip" aria-hidden="true">
+      <div class="project-tooltip-image">
+        <img id="project-tooltip-img" src="/imgs/." alt="" />
+      </div>
+      <div class="project-tooltip-copy">
+        <p class="project-tooltip-title"></p>
+        <p class="project-tooltip-description"></p>
+      </div>
+    </div>
+    <script is:inline src="/js/sidebar.js"></script>
+    {pageScripts.map((src) => <script is:inline src={src}></script>)}
+  </body>
+</html>
