@@ -23,6 +23,14 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <link rel="icon" type="image/png" href="/imgs/favicon.png" />
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-43KJ0388SJ"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-43KJ0388SJ');
+    </script>
     <script is:inline>
       try {
         var s = localStorage.getItem('sidebar-collapsed');
