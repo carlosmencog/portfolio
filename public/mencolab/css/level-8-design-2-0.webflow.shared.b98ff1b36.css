@@ -8829,6 +8829,16 @@ body:has(.section-hero) .navigation.navigation-home {
 }
 
 @media screen and (max-width: 767px) {
+  #story .about-image-wrapper {
+    aspect-ratio: 4 / 3;
+    max-height: 22rem;
+  }
+
+  #story .mencolab-story-lottie {
+    min-height: 0;
+    height: clamp(14rem, 58vw, 22rem);
+  }
+
   .section-hero .mencolab-hero-copy {
     font-size: 2.5rem;
   }
