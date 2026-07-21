@@ -8784,6 +8784,17 @@ body:has(.section-hero) .navigation.navigation-home {
   font-size: 4.75rem;
   font-weight: 700;
   line-height: 1.05;
+  margin-bottom: 1.5rem;
+}
+
+.section-hero .mencolab-hero-subcopy {
+  color: var(--mencolab-charcoal);
+  text-indent: 0;
+  max-width: 760px;
+  margin-inline: auto;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 1.35;
 }
 
 .section-hero .hero-title-home,
@@ -8802,11 +8813,19 @@ body:has(.section-hero) .navigation.navigation-home {
   .section-hero .mencolab-hero-copy {
     font-size: 3.5rem;
   }
+
+  .section-hero .mencolab-hero-subcopy {
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .section-hero .mencolab-hero-copy {
     font-size: 2.5rem;
+  }
+
+  .section-hero .mencolab-hero-subcopy {
+    font-size: 1rem;
   }
 }
 
