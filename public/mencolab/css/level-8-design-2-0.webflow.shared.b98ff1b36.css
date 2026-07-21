@@ -9063,6 +9063,16 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .service-item:hover * 
   color: var(--mencolab-charcoal);
 }
 
+.footer-whatsapp-button {
+  margin-top: 1.25rem;
+}
+
+.footer-whatsapp-button .button-container,
+.footer-whatsapp-button .button-container * {
+  background-color: var(--mencolab-olive);
+  color: var(--mencolab-charcoal);
+}
+
 .section-title,
 .divider-mutted,
 .divider-top,
