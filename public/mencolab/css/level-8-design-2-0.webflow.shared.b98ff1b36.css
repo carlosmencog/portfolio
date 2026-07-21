@@ -8936,6 +8936,10 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .why-us-bg,
   background-color: var(--mencolab-charcoal);
 }
 
+#services {
+  padding-bottom: 12.5rem;
+}
+
 #services,
 #services *,
 #services .color-inverse,
@@ -8962,6 +8966,12 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .why-us-bg,
 
 #services .missoin-color-bar {
   background-color: var(--mencolab-olive) !important;
+}
+
+@media screen and (max-width: 991px) {
+  #services {
+    padding-bottom: 7.5rem;
+  }
 }
 
 section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] {
