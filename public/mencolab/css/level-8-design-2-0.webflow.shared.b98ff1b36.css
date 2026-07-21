@@ -8978,8 +8978,17 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] {
   background-color: var(--mencolab-white);
 }
 
+#why-us {
+  padding-bottom: 12.5rem;
+}
+
 section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .service-item {
   cursor: default;
+}
+
+section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .service-item-grid {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .service-item:hover {
@@ -8988,7 +8997,18 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .service-item:hover {
 
 section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .service-item:hover,
 section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .service-item:hover * {
-  color: var(--mencolab-white);
+  color: var(--mencolab-charcoal);
+}
+
+@media screen and (max-width: 991px) {
+  #why-us {
+    padding-bottom: 7.5rem;
+  }
+
+  section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .service-item-grid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }
 
 .section-consultation-cta,
