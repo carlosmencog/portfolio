@@ -8997,11 +8997,6 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] {
   overflow: visible;
 }
 
-#portfolio .container {
-  width: 90vw;
-  max-width: 90vw;
-}
-
 #portfolio .project-content {
   grid-column-end: 13 !important;
   width: max-content;
@@ -9055,11 +9050,6 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .service-item:hover * 
 }
 
 @media screen and (max-width: 991px) {
-  #portfolio .container {
-    width: auto;
-    max-width: none;
-  }
-
   #why-us {
     padding-bottom: 7.5rem;
   }
