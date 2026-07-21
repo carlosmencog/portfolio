@@ -9014,6 +9014,10 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] {
   white-space: nowrap;
 }
 
+#portfolio .project-thumbnail-wrapper {
+  padding-top: 56.25%;
+}
+
 #why-us {
   padding-bottom: 12.5rem;
 }
