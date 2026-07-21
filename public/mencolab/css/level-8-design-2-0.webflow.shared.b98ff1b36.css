@@ -8933,12 +8933,35 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .why-us-bg,
 #services,
 #services .mission-content-wrapper,
 #services .color-inverse {
-  background-color: var(--mencolab-white);
+  background-color: var(--mencolab-charcoal);
 }
 
+#services,
+#services *,
 #services .color-inverse,
 #services .color-inverse * {
-  color: var(--mencolab-charcoal);
+  color: var(--mencolab-white);
+}
+
+#services .mission-content-wrapper {
+  overflow: hidden;
+}
+
+#services .mission-image-wrapper {
+  z-index: 0;
+  pointer-events: none;
+}
+
+#services .mission-title-wrapper,
+#services .color-inverse,
+#services .mission-text,
+#services .key-pillar-wrap {
+  z-index: 1;
+  position: relative;
+}
+
+#services .missoin-color-bar {
+  background-color: var(--mencolab-olive) !important;
 }
 
 section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] {
