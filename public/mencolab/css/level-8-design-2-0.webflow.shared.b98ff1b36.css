@@ -8811,6 +8811,10 @@ body:has(.section-hero) .navigation.navigation-home {
 }
 
 @media screen and (max-width: 991px) {
+  .section-hero .hero-paragraph {
+    display: flex;
+  }
+
   .section-hero .mencolab-hero-copy {
     font-size: 3.5rem;
   }
