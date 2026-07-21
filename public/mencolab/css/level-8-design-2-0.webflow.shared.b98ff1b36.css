@@ -9023,6 +9023,14 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] {
   padding-top: 56.25%;
 }
 
+#portfolio .project-thumbnail-inner::after {
+  content: "";
+  background-color: rgba(222, 240, 20, .32);
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+}
+
 #why-us {
   padding-bottom: 12.5rem;
 }
