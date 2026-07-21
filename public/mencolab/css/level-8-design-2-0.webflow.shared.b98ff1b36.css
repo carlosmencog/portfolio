@@ -8739,6 +8739,19 @@ a {
   margin-inline: auto;
 }
 
+.mencolab-hero-wordmark {
+  justify-content: center;
+  align-items: center;
+}
+
+.mencolab-hero-single {
+  white-space: nowrap;
+}
+
+.mencolab-hero-single .hero-title-home {
+  letter-spacing: 0;
+}
+
 .mencolab-side-mark {
   object-fit: contain;
   width: min(44vw, 560px);
