@@ -8989,6 +8989,22 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] {
   background-color: var(--mencolab-white) !important;
 }
 
+#portfolio .container,
+#portfolio .project-link,
+#portfolio .project-item-grid,
+#portfolio .project-content {
+  overflow: visible;
+}
+
+#portfolio .project-content {
+  grid-column-end: 13 !important;
+}
+
+#portfolio .project-title {
+  max-width: none;
+  white-space: nowrap;
+}
+
 #why-us {
   padding-bottom: 12.5rem;
 }
