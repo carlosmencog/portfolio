@@ -8665,3 +8665,173 @@ figcaption {
     grid-column: span 12 / span 12;
   }
 }
+
+/* MencoLab brand overrides */
+@font-face {
+  font-family: Aeonik;
+  src: url("/mencolab/brand/Aeonik-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Aeonik;
+  src: url("/mencolab/brand/Aeonik-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Aeonik;
+  src: url("/mencolab/brand/AeonikBold.otf") format("opentype");
+  font-weight: 700 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-family--font-primary: Aeonik, Arial, sans-serif;
+  --font-family--font-secondary: Aeonik, Arial, sans-serif;
+  --color--primary: #1c1c1c;
+  --black-primary: #1c1c1c;
+  --black-secondary: #1c1c1c;
+  --color--secondary: #5d5d5d;
+  --color--tertiary: #3a3a3a;
+  --color--background-mutted: #f6f6f6;
+  --color--border-mutted: #dedede;
+  --color--white: #ffffff;
+  --brand-yellow: #def014;
+  --mencolab-olive: #def014;
+  --mencolab-charcoal: #1c1c1c;
+  --mencolab-gray: #f6f6f6;
+  --mencolab-white: #ffffff;
+}
+
+body {
+  background-color: var(--mencolab-white);
+  color: var(--mencolab-charcoal);
+}
+
+a {
+  color: inherit;
+}
+
+.brand-logo {
+  width: min(210px, 46vw);
+  height: auto;
+  display: block;
+}
+
+.mencolab-hero-mark {
+  object-fit: contain;
+  width: min(46vw, 620px);
+  height: auto;
+  opacity: .12;
+  filter: none;
+}
+
+.mencolab-footer-logo {
+  object-fit: contain;
+  width: min(72vw, 760px);
+  height: auto;
+  margin-inline: auto;
+}
+
+.mencolab-side-mark {
+  object-fit: contain;
+  width: min(44vw, 560px);
+  height: auto;
+  opacity: .1;
+  filter: none;
+}
+
+.navigation,
+.navigation.navigation-home {
+  background-color: var(--mencolab-white);
+}
+
+.navigation-link,
+.navigation-link.home,
+.navigation-link-text,
+.navigation-link-text-hover {
+  color: var(--mencolab-charcoal);
+}
+
+.menu-button.home {
+  border-color: var(--mencolab-charcoal);
+}
+
+.menu-icon-top.home,
+.menu-icon-middle.home,
+.menu-icon-bottom.home {
+  background-color: var(--mencolab-charcoal);
+  border-color: var(--mencolab-charcoal);
+}
+
+.button-container,
+.submit-button,
+.submit-button.newsletter,
+.case-study-logo-circle {
+  background-color: var(--mencolab-olive);
+  color: var(--mencolab-charcoal);
+}
+
+.button,
+.button-container,
+.newsletter-input,
+.submit-button {
+  border-color: var(--mencolab-charcoal);
+}
+
+.button-text-front,
+.button-text-back,
+.service-number,
+.project-number,
+.section-title-number,
+.sitemap-link,
+.footer-email-wrap a {
+  color: var(--mencolab-charcoal);
+}
+
+.section,
+.section-hero,
+.section-consultation-cta {
+  background-color: var(--mencolab-white);
+}
+
+.section-marquee-contact,
+.footer-section,
+.mission-content-wrapper,
+.color-inverse,
+.consultation-cta-wrap {
+  background-color: var(--mencolab-charcoal);
+}
+
+.color-inverse,
+.color-inverse *,
+.footer-section,
+.footer-section *,
+.section-marquee-contact,
+.section-marquee-contact *,
+.consultation-cta-wrap,
+.consultation-cta-wrap * {
+  color: var(--mencolab-white);
+}
+
+.section-title,
+.divider-mutted,
+.divider-top,
+.divider-bottom,
+.project-link,
+.service-item {
+  border-color: var(--color--border-mutted);
+}
+
+.key-pillar-wrap,
+.service-item,
+.project-link,
+.newsletter-form-block {
+  background-color: transparent;
+}
