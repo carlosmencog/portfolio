@@ -9068,9 +9068,29 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .service-item:hover * 
 }
 
 .footer-whatsapp-button .button-container,
-.footer-whatsapp-button .button-container * {
+.footer-whatsapp-button .button-text-front,
+.footer-whatsapp-button .button-text-back {
   background-color: var(--mencolab-olive);
   color: var(--mencolab-charcoal);
+}
+
+.footer-whatsapp-button .button-container {
+  color: var(--mencolab-charcoal) !important;
+}
+
+.footer-whatsapp-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  flex: none;
+}
+
+.footer-section .footer-content-grid {
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+.footer-section .sitemap {
+  justify-self: end;
 }
 
 .section-title,
