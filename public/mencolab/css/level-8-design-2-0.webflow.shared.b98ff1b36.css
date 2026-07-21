@@ -8791,6 +8791,16 @@ a {
   color: var(--mencolab-charcoal);
 }
 
+.missoin-color-bar,
+.technology-color-bar,
+.why-us-bg,
+section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .case-study-logo-circle,
+section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .technology-color-bar,
+section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .why-us-bg,
+#w-node-b164718e-e9c5-68ce-8f7e-481f76977723-ce6ea067 .missoin-color-bar {
+  background-color: var(--mencolab-olive) !important;
+}
+
 .button,
 .button-container,
 .newsletter-input,
