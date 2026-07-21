@@ -8919,16 +8919,22 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .why-us-bg,
   background-color: var(--mencolab-white);
 }
 
-.section-marquee-contact,
 .footer-section {
   background-color: var(--mencolab-charcoal);
 }
 
 .footer-section,
-.footer-section *,
+.footer-section * {
+  color: var(--mencolab-white);
+}
+
+.section-marquee-contact {
+  background-color: var(--mencolab-olive);
+}
+
 .section-marquee-contact,
 .section-marquee-contact * {
-  color: var(--mencolab-white);
+  color: var(--mencolab-charcoal);
 }
 
 #services,
