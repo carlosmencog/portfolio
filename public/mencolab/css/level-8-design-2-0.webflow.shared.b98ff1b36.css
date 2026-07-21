@@ -8758,6 +8758,10 @@ a {
   color: var(--mencolab-charcoal);
 }
 
+#story {
+  padding-top: 6rem;
+}
+
 body:has(.section-hero) .navigation.navigation-home {
   background-color: var(--mencolab-olive);
 }
