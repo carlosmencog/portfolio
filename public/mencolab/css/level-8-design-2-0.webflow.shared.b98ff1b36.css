@@ -8752,6 +8752,64 @@ a {
   letter-spacing: 0;
 }
 
+.page-wrapper .section-hero {
+  background-color: var(--mencolab-olive);
+  color: var(--mencolab-charcoal);
+}
+
+body:has(.section-hero) .navigation.navigation-home {
+  background-color: var(--mencolab-olive);
+}
+
+.section-hero .hero-content-full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32vh;
+}
+
+.section-hero .hero-paragraph-wrap,
+.section-hero .hero-paragraph {
+  width: min(1180px, 92vw);
+  margin-inline: auto;
+}
+
+.section-hero .hero-paragraph {
+  text-align: center;
+}
+
+.section-hero .mencolab-hero-copy {
+  color: var(--mencolab-charcoal);
+  text-indent: 0;
+  font-size: 4.75rem;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.section-hero .hero-title-home,
+.section-hero .hero-caption,
+.section-hero .hero-caption *,
+.section-hero .arrow {
+  color: var(--mencolab-charcoal);
+}
+
+.section-hero .arrow line,
+.section-hero .arrow polyline {
+  stroke: var(--mencolab-charcoal);
+}
+
+@media screen and (max-width: 991px) {
+  .section-hero .mencolab-hero-copy {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-hero .mencolab-hero-copy {
+    font-size: 2.5rem;
+  }
+}
+
 .mencolab-side-mark {
   object-fit: contain;
   width: min(44vw, 560px);
