@@ -8998,10 +8998,19 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] {
 
 #portfolio .project-content {
   grid-column-end: 13 !important;
+  width: max-content;
+  min-width: max-content;
+}
+
+#portfolio .project-content-inner {
+  width: max-content;
+  min-width: max-content;
 }
 
 #portfolio .project-title {
   max-width: none;
+  width: max-content;
+  min-width: max-content;
   white-space: nowrap;
 }
 
