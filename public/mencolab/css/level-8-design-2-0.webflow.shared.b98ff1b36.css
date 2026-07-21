@@ -9085,12 +9085,44 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .service-item:hover * 
 }
 
 .footer-section .footer-content-grid {
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr auto 1fr;
   justify-content: space-between;
+  align-items: center;
+}
+
+.footer-brand-message {
+  justify-self: center;
+}
+
+.footer-brand-text {
+  color: var(--mencolab-olive);
+  letter-spacing: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 5vw, 5.25rem);
+  font-weight: 800;
+  line-height: .9;
+  white-space: nowrap;
 }
 
 .footer-section .sitemap {
   justify-self: end;
+}
+
+@media screen and (max-width: 991px) {
+  .footer-section .footer-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand-message,
+  .footer-section .sitemap {
+    justify-self: start;
+  }
+
+  .footer-brand-text {
+    text-align: left;
+    white-space: normal;
+  }
 }
 
 .section-title,
