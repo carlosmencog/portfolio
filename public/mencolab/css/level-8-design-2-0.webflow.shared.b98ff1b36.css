@@ -8978,6 +8978,19 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] {
   background-color: var(--mencolab-white);
 }
 
+section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .service-item {
+  cursor: default;
+}
+
+section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .service-item:hover {
+  background-color: var(--mencolab-olive);
+}
+
+section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .service-item:hover,
+section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .service-item:hover * {
+  color: var(--mencolab-white);
+}
+
 .section-consultation-cta,
 .section-consultation-cta .consultation-cta-wrap {
   background-color: var(--mencolab-white);
