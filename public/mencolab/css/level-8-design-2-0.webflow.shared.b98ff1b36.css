@@ -8878,11 +8878,28 @@ section[data-w-id="b2ff3364-cc26-ca3d-2453-febba03a868e"] .why-us-bg,
   background-color: var(--mencolab-olive) !important;
 }
 
-.button,
-.button-container,
 .newsletter-input,
 .submit-button {
   border-color: var(--mencolab-charcoal);
+}
+
+.button,
+.button-container {
+  border: 0;
+}
+
+.mencolab-story-lottie {
+  align-items: center;
+  justify-content: center;
+  min-height: 28rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.mencolab-story-lottie svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .button-text-front,
