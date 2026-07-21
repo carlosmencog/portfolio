@@ -3064,7 +3064,7 @@ figcaption {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 7vw;
+  font-size: 8.4vw;
   font-weight: 800;
   line-height: 1;
 }
@@ -6178,7 +6178,7 @@ figcaption {
   }
 
   .project-title {
-    font-size: 10vw;
+    font-size: 12vw;
   }
 
   .project-content-inner {
@@ -6518,7 +6518,7 @@ figcaption {
   }
 
   .project-title {
-    font-size: 9vw;
+    font-size: 10.5vw;
   }
 
   .project-info {
