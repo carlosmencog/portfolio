@@ -1564,6 +1564,51 @@ html[data-scroll-gradient-top="true"] .scroll-gradient--top {
     }
 }
 
+.sidebar-project-item {
+    gap: var(--space-sm);
+    padding: 0.55rem var(--space-md);
+}
+
+.sidebar-project-label {
+    font-size: 0.95rem;
+}
+
+.sidebar-project-icon {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.sidebar-project-icon-img {
+    width: 1.75rem;
+    height: 1.75rem;
+}
+
+.sidebar-projects-title {
+    margin-bottom: var(--space-sm);
+}
+
+.sidebar-projects-list {
+    gap: 0.1rem;
+}
+
+@media (max-width: 48rem) {
+    .sidebar-project-item {
+        padding-left: var(--space-md);
+        padding-right: var(--space-md);
+        gap: 0;
+    }
+
+    .sidebar-project-icon,
+    .sidebar-project-icon-img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .sidebar-projects-list {
+        gap: var(--space-sm);
+    }
+}
+
 /* ── Landing page animation ─────────────────────────────── */
 
 /* Word spans/links injected by the animation script */
