@@ -1061,10 +1061,6 @@ html.sidebar-preload-collapsed .main-content {
     transition: filter 0.15s ease;
 }
 
-.sidebar-project-icon-img--brand {
-    filter: none;
-}
-
 /* Hover / active: full colour */
 .sidebar-project-item:hover .sidebar-project-icon-img,
 .sidebar-project-item--active .sidebar-project-icon-img {

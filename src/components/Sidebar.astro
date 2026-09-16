@@ -3,10 +3,17 @@ const pathname = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astr
 
 const projects = [
   {
+    href: '/projects/concrete/',
+    label: 'Concrete',
+    icon: '/imgs/concrete-icon.webp',
+    tooltipTitle: 'Concrete Demo',
+    tooltipDescription: 'Fictional local contractor landing page for a concrete services business, built around trust, services, and quote generation.',
+    tooltipImage: '/imgs/concrete-preview.webp',
+  },
+  {
     href: '/projects/queemchi/',
     label: 'Queemchi',
     icon: '/imgs/queemchi-icon.svg?v=20260829',
-    brandIcon: true,
     tooltipTitle: 'Queemchi',
     tooltipDescription: 'Astro and GSAP landing page for an artisanal kimchi brand built around fresh fermentation, flavor, and direct ordering.',
     tooltipImage: '/imgs/queemchi-preview.png',
@@ -15,7 +22,6 @@ const projects = [
     href: '/projects/demo-castellana/',
     label: 'Paseo Castellana',
     icon: '/imgs/castellana-icon.png?v=20260829',
-    brandIcon: true,
     tooltipTitle: 'Paseo de la Castellana',
     tooltipDescription: 'HTML redesign proposal for a shopping center experience, planned as a future WordPress implementation.',
     tooltipImage: '/imgs/demo-castellana-preview.png',
@@ -24,7 +30,6 @@ const projects = [
     href: '/projects/vivatalent/',
     label: 'Viva Talent',
     icon: '/imgs/vivatalent-icon.svg?v=20260829',
-    brandIcon: true,
     tooltipTitle: 'Viva Talent',
     tooltipDescription: 'Client redesign proposal built with WordPress, ACF, GSAP, and Lottie.',
     tooltipImage: '/imgs/vivatalent-preview.png',
@@ -133,7 +138,7 @@ const projects = [
               data-tooltip-description={project.tooltipDescription}
             >
               <span class="sidebar-project-icon">
-                <img src={project.icon} alt="" class:list={['sidebar-project-icon-img', { 'sidebar-project-icon-img--brand': project.brandIcon }]} width="20" height="20" />
+                <img src={project.icon} alt="" class="sidebar-project-icon-img" width="20" height="20" />
               </span>
               <span class="sidebar-project-label">{project.label}</span>
             </a>
